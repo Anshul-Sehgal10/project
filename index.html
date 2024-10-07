@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin and Employee Dashboard</title>
+    <link rel="stylesheet" href="hr.css">
+</head>
+<body>
+    <header>
+        <h1>CN</h1>
+    </header>
+
+    <!-- Login Page -->
+    <section id="login-page">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="role">Role:</label>
+            <select id="role">
+                <option value="admin">Admin</option>
+                <option value="employee">Employee</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section id="admin-dashboard" class="hidden">
+        <h2>Admin Dashboard</h2>
+        <div class="task-manager">
+            <h3>Manage Tasks</h3>
+            <form id="taskForm">
+                <input type="text" id="newTask" placeholder="New Task" required>
+                <label for="employeeSelect">Assign to:</label>
+                <select id="employeeSelect">
+                    <option value="employee1">Employee 1</option>
+                    <option value="employee2">Employee 2</option>
+                    <option value="employee3">Employee 3</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="taskList"></ul>
+        </div>
+        <button id="logout" class="logout-btn">Logout</button>
+    </section>
+
+    <!-- Employee Dashboard -->
+    <section id="employee-dashboard" class="hidden">
+        <h2>Employee Dashboard</h2>
+        <h3>Your Tasks</h3>
+        <ul id="employeeTaskList"></ul>
+        <button id="logout" class="logout-btn">Logout</button>
+    </section>
+
+    <script src="hr.js"></script>
+</body>
+</html>

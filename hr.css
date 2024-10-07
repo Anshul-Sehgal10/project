@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+header {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+h2{
+    margin-top: 100px;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#login-page {
+    max-width: 400px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#taskList, #employeeTaskList {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#taskList li, #employeeTaskList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #2859a7;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
